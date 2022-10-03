@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "todos", to: "todos#index"
   get "todos/:id", to: "todos#show"
+  post "todos/:todo_text/:due_date", to: "todos#create"
 end
