@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Todo Management App</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+<body>
+    <h1 class="TodoPage-title">My Todo-list</h1>
+    <section class="AddTodo">
+        <input type="text" class="AddTodo-text" placeholder="What's next?" />
+        <input type="date" class="AddTodo-date" />
+        <input type="button" class="AddTodo-button" value="Add">
+    </section>
+    <section class="TodoSection">
+        <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Due_Today</p>
+            <p class="TodoSectionTitle-remainingCount">0/4</p>
+        </div>
+        <ul>
+            <li class="TodoItem">
+                <label class="TodoItem-container">
+                    <input type="checkbox" class="TodoItem-checkbox">
+                    Buy Grocery
+                    <p class="TodoItem-overdueLable">Overdue</p>
+                    <a class="TodoItem-delete" href="javascript:void(0)">
+                        <img src="../trashcan.png">
+                    </a>
+
+                </label>
+        </ul>
+    </section>
+
+    <section class="TodoSection">
+        <div class="TodoSectionTitle">
+            <p class="TodoSectionTitle-text">Due_Tommorow</p>
+            <p class="TodoSectionTitle-remainingCount">1/4</p>
+        </div>
+        <ul>
+            <li class="TodoItem">
+                <label class="TodoItem-container">
+                    <input type="checkbox" class="TodoItem-checkbox">
+                    Go To Gym
+                    <p class="TodoItem-overdueLable">Overdue</p>
+                    <a class="TodoItem-delete" href="javascript:void(0)">
+                        <img src="../trashcan.png">
+                    </a>
+
+                </label>
+        </ul>
+    </section>
+
+    
+</body>
+</html>
