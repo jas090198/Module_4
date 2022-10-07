@@ -19,4 +19,14 @@ class TodosController < ApplicationController
         )
         redirect_to todos_path
     end
+
+    def update
+        id = params[:id]
+        completed = params[:completed]
+        todo = Todo.find(id)
+        todo.completed = completed
+        todo.save!
+        redirect_to todos_path
+    end
+
 end
