@@ -10,14 +10,13 @@ class TodosController < ApplicationController
     end
 
     def create
-        text = param[:todo_text]
-        date = DateTime.parse(params[:due_date])
+        todo_text = params[:todo_text]
+        due_date = DateTime.parse(params[:due_date])
         new_todo = Todo.create!(
             todo_text: todo_text,
             due_date: due_date,
             completed: false
         )
-        response_text = "Your new todo is created #{new_todo.id}"
-        render plain: response_text
+        redirect_to todos_path
     end
 end

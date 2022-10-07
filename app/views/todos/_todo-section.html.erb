@@ -9,7 +9,7 @@
                     <li class="TodoItem">
                         <label class="TodoItem-container">
                             <input type="checkbox" class="TodoItem-checkbox" <%= todo.completed ? "checked": "" %>>
-                            <p style=<%= todo.completed ? "text-decoration:line-through": "" %>><%= todo.todo_text %></p>
+                            <p style=<%= todo.completed ? "text-decoration:line-through": "" %>> <%= todo.todo_text %> </p>
 
                             <% if show_due_date %>
                             <p class="TodoItem-dueDate"><%= todo.due_date.to_formatted_s(:short) %> </p>
